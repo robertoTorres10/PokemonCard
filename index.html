@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pokémon Card</title>
 </head>
@@ -13,20 +13,40 @@
     <h1>Pokémon</h1>
     <div class="container">
         <div id="card">
+            <p id="health">
+                HP:<span></span>
+            </p>
             <p id="name">
                 <span>Pikachu</span>
             </p>
             <p id="number">
                 <span>#25</span>
             </p>
-            <img src="pikachu.png" alt="" id="poke_img">
+            <hr>
+            <div id="poke_img">
+                <img src="pikachu.png" alt="">
+            </div>
             <p>
                 <span id="type">Electric</span>
-                <span id="move_set1">Thunder</span>
-                <span id="move_set2">Quick Attack</span>
+                <div id="row">
+                    <span id="move_set1">Thunder</span>
+                    <span id="move_set2">Quick Attack</span>
+                </div>
+                <div id="column">
+                    <p id="attack">55</p>
+                    <span>Attack</span>
+                </div>
+                <div id="column">
+                    <p id="defense">40</p>
+                    <span>Defense</span>
+                </div>
+                <div id="column">
+                    <p id="speed">90</p>
+                    <span>Speed</span>
+                </div>
             </p>
-            <button id="btn">Pokémon</button>
         </div>
+        <button id="btn">Pokémon</button>
     </div>
 
 
