@@ -40,6 +40,7 @@ body{
 #name{
     font-size: 20px;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 #number{
@@ -59,22 +60,23 @@ body{
 
 }
 #move_set1, #move_set2{
-    display: block;
-    position: relative;
+    float: left;
     font-size: 18px;
     font-weight: 400;
-    margin: 20px auto;
+    margin-top: 5px;
     text-transform: capitalize;
     text-align: center;
     width: 50%;
     background-color: white;
     border-radius: 50px;
-}
+} 
+
+
 #btn{
     display: block;
     position: relative;
     padding: 15px 60px;
-    margin: 30px auto;
+    margin: 60px auto;
     font-size: 18px;
     background-color: #101010;
     color: white;
@@ -87,8 +89,21 @@ body{
     box-shadow: 0 0.5em 0.5em -0.4em #101010;
     transform: translateY(-0.25em);
 }
-@media(max-width: 650px){
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3){
     .container{
-        width: 250px;
+        width: 270px;
+    }
+    #card img{
+        max-height: 180px;
+        width: 100px;
+    }
+    #btn{
+        padding: 15px 40px;
+    }
+    #move_set1, #move_set2{
+        width: 60%;
     }
 }
