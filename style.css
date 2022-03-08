@@ -120,7 +120,7 @@ h1{
     transform: translateY(-0.25em);
 }
 
-@media screen and (max-width: 650px){
+@media screen and (min-width: 576px){
     .container{
         height: 55%;
         width: 70%;
