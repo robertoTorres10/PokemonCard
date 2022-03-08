@@ -101,9 +101,10 @@ body{
         width: 100px;
     }
     #btn{
-        padding: 15px 40px;
+        padding: 10px 40px;
     }
     #move_set1, #move_set2{
-        width: 60%;
+        width: 50%;
+        font-size: 16px;
     }
 }
